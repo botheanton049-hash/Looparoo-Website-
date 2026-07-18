@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOOPAROO — Mehrweg. Nachhaltig. Zukunft.</title>
-<meta name="description" content="LOOPAROO ist das Mehrwegsystem für den Online-Versand: eine robuste rPET-Tasche, bis zu 50-mal nutzbar, kostenlos per Briefkasten zurückgegeben.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%2316233F%22/></svg>">
+<title>LOOPAROO — Das Mehrwegsystem für den Online-Versand</title>
+<meta name="description" content="LOOPAROO ersetzt Einwegverpackung im E-Commerce durch eine rPET-Mehrwegtasche mit bis zu 50 Nutzungszyklen. PPWR-konform, kostenlose Rückgabe per Briefkasten.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23122036%22/><path d=%22M50 22a28 28 0 1 0 28 28%22 stroke=%22%237FA36B%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -21,23 +21,23 @@
   <div class="wrap header-inner">
     <a href="#top" class="brand">
       <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4a20 20 0 1 0 20 20" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/><path d="M24 4l6 2-2 6" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="13" fill="#122036"/><path d="M24 12a12 12 0 1 0 12 12" stroke="#8FB47B" stroke-width="3.4" stroke-linecap="round"/><path d="M24 12l5 1.6-1.6 5" stroke="#8FB47B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
       <span class="brand__word">LOOPAROO</span>
     </a>
 
     <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
-      <a href="#problem">Problem</a>
-      <a href="#produkt">Produkt</a>
-      <a href="#loop">Der Loop</a>
-      <a href="#endkunden">Endkund:innen</a>
-      <a href="#partner">Für Unternehmen</a>
-      <a href="#markt">Markt</a>
-      <a href="#team">Team</a>
+      <a href="#produkt" data-nav>Produkt</a>
+      <a href="#loop" data-nav>Der Loop</a>
+      <a href="#rechner" data-nav>Ersparnis-Rechner</a>
+      <a href="#endkunden" data-nav>Endkund:innen</a>
+      <a href="#partner" data-nav>Für Unternehmen</a>
+      <a href="#vergleich" data-nav>Vergleich</a>
+      <a href="#faq" data-nav>FAQ</a>
     </nav>
 
     <div class="header-cta">
-      <a href="#kontakt-partner" class="btn btn--ghost">Partner werden</a>
+      <a href="#kontakt-partner" class="btn btn--primary btn--sm">Partner werden</a>
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
@@ -47,174 +47,303 @@
 
 <main id="main">
 
-  <!-- HERO -->
+  <!-- ============ HERO ============ -->
   <section class="hero" id="top">
-    <div class="hero__bg" aria-hidden="true">
-      <svg class="hero__loop-svg" viewBox="0 0 600 600" fill="none">
-        <circle cx="300" cy="300" r="260" stroke="currentColor" stroke-width="1" stroke-dasharray="2 10"/>
-        <circle cx="300" cy="300" r="200" stroke="currentColor" stroke-width="1" stroke-dasharray="2 10"/>
-      </svg>
-    </div>
+    <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+
     <div class="wrap hero__inner">
-      <div class="hero__text">
-        <p class="eyebrow">Mehrweg · Nachhaltig · Zukunft</p>
-        <h1>Eine Tasche,<br>die immer<br><span class="text-accent">wiederkommt.</span></h1>
-        <p class="hero__lede">LOOPAROO ist das Mehrwegsystem für den Online-Versand — eine robuste rPET-Tasche, bis zu 50‑mal nutzbar, kostenlos per Briefkasten zurückgegeben. Weniger Müll für die Umwelt. Weniger Aufwand für alle.</p>
+      <div class="hero__text reveal">
+        <p class="eyebrow"><span class="dot"></span>PPWR-konform ab 2030 · schon heute einsatzbereit</p>
+        <h1>Versandverpackung,<br>die <span class="text-accent">im Kreis</span><br>läuft.</h1>
+        <p class="hero__lede">LOOPAROO ersetzt Einwegkarton durch eine robuste rPET-Mehrwegtasche — bis zu 50 Nutzungszyklen, kostenlose Rückgabe per Briefkasten, volle Transparenz per QR‑Tracking.</p>
         <div class="hero__ctas">
           <a href="#kontakt-partner" class="btn btn--primary">Für Unternehmen anfragen</a>
-          <a href="#loop" class="btn btn--outline">So funktioniert's</a>
+          <a href="#loop" class="btn btn--outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            Wie es funktioniert
+          </a>
+        </div>
+        <div class="hero__trust">
+          <div class="avatar-stack" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span>Erster Pilotpartner bereits an Bord — <strong>meinvereinsshop.de</strong></span>
         </div>
       </div>
-      <div class="hero__visual" role="img" aria-label="Illustration einer LOOPAROO Mehrwegtasche mit Kordelverschluss">
-        <div class="bag-illustration">
-          <svg viewBox="0 0 320 380" fill="none">
-            <path d="M46 120 L46 340 Q46 360 66 360 L254 360 Q274 360 274 340 L274 120 Z" fill="#7C9B6C"/>
-            <path d="M46 120 L46 340 Q46 360 66 360 L254 360 Q274 360 274 340 L274 120 Z" stroke="#16233F" stroke-width="2" opacity="0.15"/>
-            <rect x="46" y="112" width="228" height="26" rx="4" fill="#16233F"/>
-            <circle cx="222" cy="100" r="15" fill="#16233F"/>
-            <path d="M222 100 v-26" stroke="#16233F" stroke-width="6" stroke-linecap="round"/>
-            <text x="160" y="250" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="30" fill="#F5F3E8" letter-spacing="1">LOOPAROO</text>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="loop-graphic">
+          <svg viewBox="0 0 420 420" class="loop-graphic__ring">
+            <circle cx="210" cy="210" r="176" class="loop-ring-track"/>
+            <circle cx="210" cy="210" r="176" class="loop-ring-arc"/>
           </svg>
-        </div>
-        <div class="badge-float badge-float--1">50× nutzbar</div>
-        <div class="badge-float badge-float--2">rPET · recycelt</div>
-      </div>
-    </div>
-
-    <div class="hero__stats wrap">
-      <div class="hero__stat">
-        <span class="count" data-count="13.2" data-decimals="1">0</span><span class="hero__stat-suffix"> Mio.</span>
-        <p>Pakete/Tag in Deutschland</p>
-      </div>
-      <div class="hero__stat">
-        <span class="count-prefix">&gt;</span><span class="count" data-count="1" data-decimals="0">0</span><span class="hero__stat-suffix"> Mio. t</span>
-        <p>Verpackungsmüll pro Jahr</p>
-      </div>
-      <div class="hero__stat">
-        <span class="count" data-count="96" data-decimals="0">0</span><span class="hero__stat-suffix">%</span>
-        <p>davon Einwegmaterial</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROBLEM -->
-  <section class="section" id="problem">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--dark">Das Problem</p>
-      <h2 class="section-title">Ein Berg Müll, der täglich wächst</h2>
-      <p class="section-lede">177,8 kg Verpackungsmüll pro Kopf und Jahr (EU, 2023) — und die Kurve zeigt weiter nach oben.</p>
-
-      <div class="card-grid card-grid--3">
-        <article class="card">
-          <div class="card__bar" style="background:var(--navy)"></div>
-          <h3>Wachsender E‑Commerce</h3>
-          <p class="card__stat">4,8 Mrd.</p>
-          <p>Pakete pro Jahr in Deutschland — bei 8–10 % Wachstum weltweit, jedes Jahr aufs Neue.</p>
-        </article>
-        <article class="card">
-          <div class="card__bar" style="background:#B5572A"></div>
-          <h3>Massiver Müll</h3>
-          <p class="card__stat">96 %</p>
-          <p>der Versandverpackungen bestehen aus Einwegmaterial — Karton und Plastik, einmal genutzt, dann weg.</p>
-        </article>
-        <article class="card">
-          <div class="card__bar" style="background:var(--green-mid)"></div>
-          <h3>Regulatorischer Druck</h3>
-          <p class="card__stat">40 %</p>
-          <p>Mehrwegpflicht ab 2030 für Online‑Händler — so schreibt es die EU‑Verpackungsverordnung (PPWR) vor.</p>
-        </article>
-      </div>
-
-      <p class="callout">Bestehende Mehrwegsysteme scheitern an einer Ursache: <strong>zu komplizierte Rückgabe.</strong></p>
-    </div>
-  </section>
-
-  <!-- PRODUKT -->
-  <section class="section section--dark" id="produkt">
-    <div class="wrap">
-      <p class="eyebrow">Unsere Lösung</p>
-      <h2 class="section-title">Die Tasche, die alles verändert</h2>
-      <p class="section-lede">Zwei Größen. rPET-Material. Bis zu 50 Nutzungszyklen.</p>
-
-      <div class="product-grid">
-        <div class="product-visual">
-          <div class="bag-pair" aria-hidden="true">
-            <svg class="bag bag--l" viewBox="0 0 260 300" fill="none">
-              <rect x="20" y="70" width="220" height="210" rx="8" fill="#7C9B6C"/>
-              <rect x="20" y="62" width="220" height="22" rx="4" fill="#0E1930"/>
-              <circle cx="195" cy="52" r="12" fill="#0E1930"/>
-              <text x="130" y="185" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="20" fill="#F5F3E8">LOOPAROO</text>
-            </svg>
-            <svg class="bag bag--s" viewBox="0 0 260 300" fill="none">
-              <rect x="45" y="120" width="170" height="150" rx="8" fill="#A9C08F"/>
-              <rect x="45" y="112" width="170" height="18" rx="4" fill="#0E1930"/>
-              <circle cx="180" cy="104" r="10" fill="#0E1930"/>
-              <text x="130" y="205" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="15" fill="#16233F">LOOPAROO</text>
+          <div class="loop-graphic__center">
+            <svg viewBox="0 0 220 260" fill="none">
+              <defs>
+                <linearGradient id="bagGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#8FB47B"/>
+                  <stop offset="1" stop-color="#5C8A55"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="110" cy="242" rx="80" ry="12" fill="#122036" opacity="0.08"/>
+              <path d="M40 78 L40 210 Q40 228 58 228 L162 228 Q180 228 180 210 L180 78 Z" fill="url(#bagGrad)"/>
+              <rect x="40" y="70" width="140" height="20" rx="4" fill="#122036"/>
+              <circle cx="150" cy="58" r="11" fill="#122036"/>
+              <path d="M150 58v-20" stroke="#122036" stroke-width="5" stroke-linecap="round"/>
+              <rect x="66" y="150" width="34" height="26" rx="4" fill="#EFEBDA" opacity=".9"/>
+              <rect x="72" y="156" width="10" height="10" fill="#122036" opacity=".5"/>
+              <text x="110" y="200" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="15" fill="#F5F3E8" letter-spacing=".5">LOOPAROO</text>
             </svg>
           </div>
-          <p class="product-visual__caption">S — 20 × 40 cm · L — 25 × 50 cm</p>
+          <div class="loop-graphic__node loop-graphic__node--1">↻ 50×</div>
+          <div class="loop-graphic__node loop-graphic__node--2">rPET</div>
+          <div class="loop-graphic__node loop-graphic__node--3">QR-Tracking</div>
         </div>
-
-        <dl class="spec-list">
-          <div><dt>Material</dt><dd>Recyceltes rPET</dd></div>
-          <div><dt>Größen</dt><dd>S: 20×40 cm · L: 25×50 cm</dd></div>
-          <div><dt>Verschluss</dt><dd>Ziplock + Sicherheitslasche + Plombe</dd></div>
-          <div><dt>Nutzungen</dt><dd>Bis zu 50 Zyklen</dd></div>
-          <div><dt>Tracking</dt><dd>QR-Code auf jeder Tasche</dd></div>
-          <div><dt>Rückgabe</dt><dd>Kostenlos per Briefkasten</dd></div>
-        </dl>
       </div>
+    </div>
 
-      <ul class="feature-strip">
-        <li><span aria-hidden="true">🔒</span> Sicherer Verschluss</li>
-        <li><span aria-hidden="true">🌿</span> Nachhaltiges Material</li>
-        <li><span aria-hidden="true">💧</span> Wasserabweisend &amp; robust</li>
-        <li><span aria-hidden="true">♻️</span> Wiederverwendbar &amp; langlebig</li>
-      </ul>
+    <div class="wrap">
+      <div class="hero__stats">
+        <div class="hero__stat"><span class="count" data-count="13.2" data-decimals="1">0</span><span class="unit">Mio.</span><p>Pakete/Tag in DE</p></div>
+        <div class="hero__stat"><span class="unit unit--pre">&gt;</span><span class="count" data-count="1" data-decimals="0">0</span><span class="unit">Mio. t</span><p>Verpackungsmüll/Jahr</p></div>
+        <div class="hero__stat"><span class="count" data-count="96" data-decimals="0">0</span><span class="unit">%</span><p>Einwegmaterial heute</p></div>
+        <div class="hero__stat"><span class="count" data-count="50" data-decimals="0">0</span><span class="unit">×</span><p>nutzbar pro Tasche</p></div>
+      </div>
     </div>
   </section>
 
-  <!-- LOOP / PROCESS -->
+  <!-- ============ LOGO / KATEGORIE MARQUEE ============ -->
+  <section class="marquee-section" aria-label="Geeignete Branchen">
+    <p class="marquee-label">Gebaut für Online-Shops mit hohem Versandaufkommen</p>
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Fashion &amp; Apparel</span><span>Beauty &amp; Cosmetics</span><span>Home &amp; Living</span><span>Sport &amp; Outdoor</span><span>Fan- &amp; Vereinsartikel</span><span>Elektronik-Zubehör</span>
+        <span>Fashion &amp; Apparel</span><span>Beauty &amp; Cosmetics</span><span>Home &amp; Living</span><span>Sport &amp; Outdoor</span><span>Fan- &amp; Vereinsartikel</span><span>Elektronik-Zubehör</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section" id="problem">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Das Problem</p>
+        <h2 class="section-title">Ein Berg Müll, der täglich wächst</h2>
+        <p class="section-lede">177,8 kg Verpackungsmüll pro Kopf und Jahr in der EU (2023) — Tendenz steigend.</p>
+      </div>
+
+      <div class="card-grid card-grid--3">
+        <article class="card reveal">
+          <div class="card__icon" style="--ic:#122036"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l9-5 9 5-9 5-9-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 8v8l9 5 9-5V8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 13v8" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <h3>Wachsender E-Commerce</h3>
+          <p class="card__stat">4,8 Mrd.</p>
+          <p>Pakete pro Jahr in Deutschland, bei 8–10&nbsp;% globalem Wachstum — Jahr für Jahr.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" style="--ic:#B5572A"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16l-1.5 13a2 2 0 0 1-2 1.8H7.5a2 2 0 0 1-2-1.8L4 7Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <h3>Massiver Müll</h3>
+          <p class="card__stat">96&nbsp;%</p>
+          <p>der Versandverpackungen bestehen aus Einwegmaterial — einmal genutzt, dann Abfall.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" style="--ic:#5C8A55"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Regulatorischer Druck</h3>
+          <p class="card__stat">40&nbsp;%</p>
+          <p>Mehrwegpflicht ab 2030 für Online-Händler laut EU-Verpackungsverordnung (PPWR).</p>
+        </article>
+      </div>
+
+      <p class="callout reveal">Bestehende Mehrwegsysteme scheitern an einer Ursache: <strong>zu komplizierte Rückgabe.</strong> LOOPAROO löst genau das.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRODUKT ============ -->
+  <section class="section section--dark" id="produkt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Das Produkt</p>
+        <h2 class="section-title">Eine Tasche, zwei Größen, ein Zweck</h2>
+        <p class="section-lede">Robustes rPET, ein sicherer Verschluss und ein QR-Code, der jeden Umlauf nachvollziehbar macht.</p>
+      </div>
+
+      <div class="product-panel reveal">
+        <div class="product-panel__visual">
+          <svg viewBox="0 0 340 380" class="bag-render" id="bagRender" fill="none">
+            <defs>
+              <linearGradient id="bagRenderGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#9BC087"/>
+                <stop offset="1" stop-color="#5C8A55"/>
+              </linearGradient>
+              <linearGradient id="bagShine" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff" stop-opacity=".35"/>
+                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <ellipse cx="170" cy="358" rx="118" ry="14" fill="#000" opacity=".18"/>
+            <path id="bagBody" d="M56 120 L56 320 Q56 340 76 340 L264 340 Q284 340 284 320 L284 120 Z" fill="url(#bagRenderGrad)"/>
+            <path d="M56 120 L284 120 L284 170 L56 170 Z" fill="url(#bagShine)"/>
+            <rect x="56" y="108" width="228" height="24" rx="5" fill="#0E1930"/>
+            <circle cx="236" cy="94" r="13" fill="#0E1930"/>
+            <path d="M236 94v-24" stroke="#0E1930" stroke-width="5.5" stroke-linecap="round"/>
+            <rect x="90" y="222" width="44" height="34" rx="5" fill="#F5F3E8"/>
+            <rect x="98" y="230" width="12" height="12" fill="#122036"/>
+            <rect x="114" y="230" width="12" height="12" fill="#122036" opacity=".55"/>
+            <text x="170" y="300" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="19" fill="#F5F3E8" letter-spacing="1">LOOPAROO</text>
+          </svg>
+        </div>
+
+        <div class="product-panel__data">
+          <div class="size-toggle" role="tablist" aria-label="Taschengröße wählen">
+            <button class="size-toggle__btn is-active" role="tab" aria-selected="true" data-size="s">Größe S</button>
+            <button class="size-toggle__btn" role="tab" aria-selected="false" data-size="l">Größe L</button>
+          </div>
+
+          <dl class="spec-table" id="specTable">
+            <div><dt>Maße</dt><dd data-field="dims">20 × 40 cm</dd></div>
+            <div><dt>Material</dt><dd>Recyceltes rPET</dd></div>
+            <div><dt>Verschluss</dt><dd>Ziplock + Sicherheitslasche + Plombe</dd></div>
+            <div><dt>Nutzungen</dt><dd>bis zu 50 Zyklen</dd></div>
+            <div><dt>Herstellkosten</dt><dd data-field="cost">4,53 €</dd></div>
+            <div><dt>Verkaufspreis</dt><dd data-field="price">8,00 €</dd></div>
+          </dl>
+
+          <ul class="feature-strip">
+            <li><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4Z" stroke="currentColor" stroke-width="1.6"/></svg>Sicherer Verschluss</li>
+            <li><svg viewBox="0 0 24 24" fill="none"><path d="M17 4a5 5 0 0 0-5 5v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 20a5 5 0 0 1 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Nachhaltiges Material</li>
+            <li><svg viewBox="0 0 24 24" fill="none"><path d="M12 2c4 5 7 8.5 7 12.5A7 7 0 1 1 5 14.5C5 10.5 8 7 12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>Wasserabweisend</li>
+            <li><svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 4v3h-3M7.5 20v-3h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Wiederverwendbar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOOP / PROCESS (interactive stepper) ============ -->
   <section class="section" id="loop">
     <div class="wrap">
-      <p class="eyebrow eyebrow--dark">Ein geschlossenes System</p>
-      <h2 class="section-title">So funktioniert der Loop</h2>
-      <p class="section-lede">Fünf Schritte, ein Kreislauf — ohne Lücken.</p>
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Ein geschlossenes System</p>
+        <h2 class="section-title">So funktioniert der Loop</h2>
+        <p class="section-lede">Fünf Schritte, ein Kreislauf — ohne Lücken. Klicken Sie sich durch.</p>
+      </div>
 
-      <div class="loop-steps" role="list">
-        <div class="loop-step" role="listitem" style="--i:0">
-          <span class="loop-step__num">1</span>
-          <h3>Versand</h3>
-          <p>Der Händler verschickt die Bestellung in der LOOPAROO-Tasche statt in Einwegkarton.</p>
+      <div class="stepper reveal" id="stepper">
+        <div class="stepper__nav" role="tablist" aria-label="Loop-Schritte">
+          <button class="stepper__btn is-active" role="tab" aria-selected="true" data-step="0">
+            <span class="stepper__num">01</span><span>Versand</span>
+          </button>
+          <button class="stepper__btn" role="tab" aria-selected="false" data-step="1">
+            <span class="stepper__num">02</span><span>Empfang</span>
+          </button>
+          <button class="stepper__btn" role="tab" aria-selected="false" data-step="2">
+            <span class="stepper__num">03</span><span>Rückgabe</span>
+          </button>
+          <button class="stepper__btn" role="tab" aria-selected="false" data-step="3">
+            <span class="stepper__num">04</span><span>ggf. Reinigung</span>
+          </button>
+          <button class="stepper__btn" role="tab" aria-selected="false" data-step="4">
+            <span class="stepper__num">05</span><span>Wiedernutzung</span>
+          </button>
         </div>
-        <div class="loop-step" role="listitem" style="--i:1">
-          <span class="loop-step__num">2</span>
-          <h3>Empfang</h3>
-          <p>Die Kundschaft erhält das Paket wie gewohnt — sicher verschlossen, sichtbar nachhaltig.</p>
-        </div>
-        <div class="loop-step" role="listitem" style="--i:2">
-          <span class="loop-step__num">3</span>
-          <h3>Rückgabe</h3>
-          <p>Tasche falten, umwenden, in den nächsten Briefkasten. Ohne Zusatzweg, ohne Kosten.</p>
-        </div>
-        <div class="loop-step" role="listitem" style="--i:3">
-          <span class="loop-step__num">4</span>
-          <h3>ggf. Reinigung</h3>
-          <p>Bei Bedarf wird die Tasche nach eigenem Hygienestandard aufbereitet.</p>
-        </div>
-        <div class="loop-step" role="listitem" style="--i:4">
-          <span class="loop-step__num">5</span>
-          <h3>Wiedernutzung</h3>
-          <p>Zurück in den Kreislauf — bis zu 50‑mal, bevor sie recycelt wird.</p>
+
+        <div class="stepper__panel">
+          <div class="stepper__panel-text">
+            <div class="stepper__slide is-active" data-panel="0">
+              <h3>Versand</h3>
+              <p>Der Händler verpackt die Bestellung in der LOOPAROO-Tasche statt in Einwegkarton — der Kreislauf beginnt.</p>
+            </div>
+            <div class="stepper__slide" data-panel="1">
+              <h3>Empfang</h3>
+              <p>Die Kundschaft erhält das Paket wie gewohnt: sicher verschlossen, sichtbar nachhaltig, ohne Mehraufwand.</p>
+            </div>
+            <div class="stepper__slide" data-panel="2">
+              <h3>Rückgabe</h3>
+              <p>Tasche falten, wenden, in den nächsten Briefkasten. Kostenlos, ohne Zusatzweg, ohne App.</p>
+            </div>
+            <div class="stepper__slide" data-panel="3">
+              <h3>ggf. Reinigung</h3>
+              <p>Bei Bedarf wird die Tasche extern nach einheitlichem Hygienestandard aufbereitet.</p>
+            </div>
+            <div class="stepper__slide" data-panel="4">
+              <h3>Wiedernutzung</h3>
+              <p>Zurück in den Kreislauf — bis zu 50-mal, bevor das Material recycelt wird.</p>
+            </div>
+          </div>
+          <div class="stepper__panel-visual" aria-hidden="true">
+            <svg viewBox="0 0 200 200" id="stepperRing">
+              <circle cx="100" cy="100" r="82" class="loop-ring-track"/>
+              <circle cx="100" cy="100" r="82" class="loop-ring-arc" id="stepperArc"/>
+              <g id="stepperIcon" transform="translate(88,88) scale(1.5)"></g>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ENDKUNDEN -->
+  <!-- ============ ERSPARNIS-RECHNER ============ -->
+  <section class="section section--muted" id="rechner">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Interaktiv</p>
+        <h2 class="section-title">Was LOOPAROO für Ihr Sendungsvolumen bedeutet</h2>
+        <p class="section-lede">Schätzung auf Basis unserer Kalkulation: Break-even nach rund 30 Umläufen, danach ca. 0,27–0,30&nbsp;€ Kosten pro Versand.</p>
+      </div>
+
+      <div class="calculator reveal">
+        <div class="calculator__input">
+          <label for="pkgRange">Pakete pro Monat</label>
+          <input type="range" id="pkgRange" min="100" max="20000" step="100" value="2000">
+          <div class="calculator__value"><span id="pkgValue">2.000</span> Pakete/Monat</div>
+        </div>
+
+        <div class="calculator__results">
+          <div class="calc-card">
+            <p class="calc-card__label">Einwegkarton (ca. 1,00 €/Versand)</p>
+            <p class="calc-card__num" id="calcSingle">2.000 €</p>
+            <p class="calc-card__sub">pro Monat</p>
+          </div>
+          <div class="calc-card calc-card--accent">
+            <p class="calc-card__label">LOOPAROO im eingeschwungenen Betrieb (ab ca. 0,30 €/Versand)</p>
+            <p class="calc-card__num" id="calcLoop">600 €</p>
+            <p class="calc-card__sub">pro Monat</p>
+          </div>
+          <div class="calc-card">
+            <p class="calc-card__label">Vermiedene Einwegverpackungen</p>
+            <p class="calc-card__num" id="calcWaste">2.000</p>
+            <p class="calc-card__sub">Stück / Monat</p>
+          </div>
+        </div>
+        <p class="calculator__note">Modellrechnung zur Orientierung, keine verbindliche Kalkulation. Tatsächliche Werte hängen von Rücklaufquote, Taschengröße und individuellem Vertrag ab.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENDKUNDEN ============ -->
   <section class="section section--split" id="endkunden">
     <div class="wrap split-grid">
-      <div class="split-grid__text">
+      <div class="split-grid__visual reveal" aria-hidden="true">
+        <svg viewBox="0 0 320 300" class="mailbox-render">
+          <defs>
+            <linearGradient id="mbGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1B2C4C"/>
+              <stop offset="1" stop-color="#0E1930"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="160" cy="266" rx="120" ry="14" fill="#122036" opacity=".08"/>
+          <rect x="70" y="120" width="150" height="110" rx="16" fill="url(#mbGrad)"/>
+          <rect x="70" y="120" width="150" height="30" rx="16" fill="#0A1526"/>
+          <rect x="196" y="176" width="70" height="12" rx="6" fill="#C9A227"/>
+          <path d="M145 70 L182 100 L108 100 Z" fill="#7C9B6C"/>
+          <rect x="98" y="150" width="94" height="10" rx="4" fill="#8FB47B" opacity=".55"/>
+          <g transform="translate(206,150)">
+            <rect width="46" height="34" rx="5" fill="#EFEBDA"/>
+            <rect x="6" y="8" width="12" height="12" fill="#122036" opacity=".55"/>
+            <rect x="24" y="8" width="12" height="12" fill="#122036"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="split-grid__text reveal">
         <p class="eyebrow eyebrow--dark">Für Endkund:innen</p>
         <h2 class="section-title">Nachhaltig einkaufen, ohne Umwege</h2>
         <p class="section-lede">Kein Extra-Aufwand, keine App, keine Wartezeit — einfach zurückgeben und fertig.</p>
@@ -222,38 +351,39 @@
           <li>Kostenlose Rückgabe direkt im eigenen Briefkasten</li>
           <li>Sicher verschlossen dank Ziplock, Lasche &amp; Plombe</li>
           <li>QR-Code für volle Transparenz über den Kreislauf</li>
-          <li>66 % der Kund:innen vertrauen Marken mit nachhaltiger Verpackung mehr</li>
+          <li>66&nbsp;% der Kund:innen vertrauen Marken mit nachhaltiger Verpackung mehr</li>
         </ul>
-        <a href="#loop" class="link-arrow">Mehr über die Rückgabe erfahren →</a>
-      </div>
-      <div class="split-grid__visual" aria-hidden="true">
-        <div class="mailbox-illustration">
-          <svg viewBox="0 0 260 220" fill="none">
-            <rect x="30" y="70" width="140" height="90" rx="14" fill="#16233F"/>
-            <rect x="30" y="70" width="140" height="26" rx="14" fill="#0E1930"/>
-            <rect x="150" y="120" width="70" height="10" rx="4" fill="#C9A227"/>
-            <path d="M100 40 L130 65 L70 65 Z" fill="#7C9B6C"/>
-            <rect x="20" y="160" width="160" height="10" rx="4" fill="#A9C08F"/>
-          </svg>
+
+        <div class="mini-faq">
+          <details>
+            <summary>Kostet die Rückgabe etwas?</summary>
+            <p>Nein. Die Tasche wird kostenlos über den normalen Briefkasten zurückgegeben — kein Gang zur Post nötig.</p>
+          </details>
+          <details>
+            <summary>Was, wenn die Tasche beschädigt ist?</summary>
+            <p>Die Sicherheitslasche und Plombe schützen die Sendung während des Transports; bei stärkerer Abnutzung wird die Tasche im Kreislauf ausgetauscht.</p>
+          </details>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PARTNER / B2B -->
+  <!-- ============ PARTNER / B2B ============ -->
   <section class="section section--dark" id="partner">
     <div class="wrap">
-      <p class="eyebrow">Für Partner-Unternehmen</p>
-      <h2 class="section-title">Ihr Versand, PPWR‑bereit — schon heute</h2>
-      <p class="section-lede">Von mittelgroßen Online-Shops bis zu nachhaltigen Marken mit hohem Versandaufkommen: LOOPAROO macht Mehrweg für Ihr Unternehmen planbar.</p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Für Partner-Unternehmen</p>
+        <h2 class="section-title">Ihr Versand, PPWR-bereit — schon heute</h2>
+        <p class="section-lede">Für mittelgroße Online-Shops und nachhaltige Marken mit hohem Versandaufkommen (&gt; 500 Pakete/Monat).</p>
+      </div>
 
-      <div class="partner-grid">
+      <div class="partner-grid reveal">
         <ul class="check-list check-list--light">
           <li>PPWR-konform ab 2030 — statt Nachrüstung unter Zeitdruck</li>
-          <li>Für Shops mit hohem Versandanteil (&gt; 500 Pakete/Monat)</li>
           <li>Händler-Dashboard mit Echtzeit-Tracking per QR-Code</li>
-          <li>Preisgarantie im 2030‑Readiness‑Paket über 3 Jahre</li>
-          <li>„LOOPAROO Loop‑Partner"‑Zertifikat als Marketingargument</li>
+          <li>Preisgarantie im 2030-Readiness-Paket über 3 Jahre</li>
+          <li>„LOOPAROO Loop-Partner"-Zertifikat als Marketingargument</li>
+          <li>Dual-Sourcing-Logistik: kein Single Point of Failure</li>
         </ul>
 
         <div class="pricing-card">
@@ -263,52 +393,81 @@
               <tr><th>Größe</th><th>Kosten</th><th>Preis</th><th>Marge</th></tr>
             </thead>
             <tbody>
-              <tr><td>S · 20×40 cm</td><td>4,53 €</td><td>8,00 €</td><td>3,47 €</td></tr>
-              <tr><td>L · 25×50 cm</td><td>5,13 €</td><td>9,00 €</td><td>3,87 €</td></tr>
+              <tr><td>S · 20×40 cm</td><td>4,53 €</td><td>8,00 €</td><td class="pos">3,47 €</td></tr>
+              <tr><td>L · 25×50 cm</td><td>5,13 €</td><td>9,00 €</td><td class="pos">3,87 €</td></tr>
             </tbody>
           </table>
-          <p class="pricing-card__note">Theoretischer Break-even bei ca. 30 Umläufen — danach sinken die Kosten pro Versand auf 0,27–0,30 €.</p>
+          <p class="pricing-card__note">Break-even bei ca. 30 Umläufen — danach sinken die Kosten pro Versand auf 0,27–0,30 €.</p>
         </div>
       </div>
 
-      <div class="pilot-note">
-        <p class="eyebrow eyebrow--gold">Referenz</p>
-        <p><strong>meinvereinsshop.de</strong> ist erster Pilotkunde: 300 Taschen im On-Demand-Versand an Vereinsmitglieder — Rücklaufquote und Kundenfeedback fließen direkt in die Weiterentwicklung ein.</p>
+      <div class="pilot-note reveal">
+        <p class="eyebrow eyebrow--gold">Pilotprojekt</p>
+        <p><strong>meinvereinsshop.de</strong> (Werder/Havel) testet LOOPAROO im On-Demand-Versand von Vereins- und Fanartikeln mit rund 300 Taschen — genau das viele kleine Paketvolumen, für das unser System gebaut ist.</p>
       </div>
 
-      <div class="center-cta">
+      <div class="center-cta reveal">
         <a href="#kontakt-partner" class="btn btn--primary">Jetzt Partner werden</a>
       </div>
     </div>
   </section>
 
-  <!-- MARKT -->
-  <section class="section" id="markt">
+  <!-- ============ VERGLEICH ============ -->
+  <section class="section" id="vergleich">
     <div class="wrap">
-      <p class="eyebrow eyebrow--dark">Markt &amp; Potenzial</p>
-      <h2 class="section-title">1,55 Billionen € — und wir sind dabei</h2>
-      <p class="section-lede">Versandverpackungen wachsen mit einer CAGR von 5,7 %, nachhaltige Verpackungen sogar mit 7,6 % pro Jahr.</p>
-
-      <div class="stat-grid">
-        <div class="stat-block">
-          <p class="stat-block__num">120.000</p>
-          <p class="stat-block__label">E‑Commerce‑Unternehmen im DACH‑Raum</p>
-        </div>
-        <div class="stat-block">
-          <p class="stat-block__num">82 %</p>
-          <p class="stat-block__label">davon mit strategischem Nachhaltigkeitsfokus</p>
-        </div>
-        <div class="stat-block">
-          <p class="stat-block__num">2030</p>
-          <p class="stat-block__label">EU-weite Mehrwegpflicht (PPWR) für Versandverpackungen</p>
-        </div>
-        <div class="stat-block">
-          <p class="stat-block__num">526 Mrd. €</p>
-          <p class="stat-block__label">prognostizierter Markt für nachhaltige Verpackungen bis 2031</p>
-        </div>
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Einordnung</p>
+        <h2 class="section-title">Wo LOOPAROO im Markt steht</h2>
+        <p class="section-lede">Direkter Vergleich mit etablierten Mehrweg-Versandlösungen.</p>
       </div>
 
-      <div class="roadmap">
+      <div class="table-scroll reveal">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Anbieter</th>
+              <th>Preis/Nutzung</th>
+              <th>Handlichkeit</th>
+              <th>Rückgabe</th>
+              <th>Zyklen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="compare-table__highlight">
+              <td>LOOPAROO</td>
+              <td>0,40–0,60 €</td>
+              <td>faltbar / kompakt</td>
+              <td>Briefkasten</td>
+              <td>&lt; 50</td>
+            </tr>
+            <tr><td>RePack</td><td>1,50–3,00 €</td><td>faltbar</td><td>Post/Paketshop</td><td>~20</td></tr>
+            <tr><td>Hey Circle</td><td>1,00–2,50 €</td><td>faltbar</td><td>Paketdienst</td><td>~50</td></tr>
+            <tr><td>Hipli</td><td>2,00–3,50 €</td><td>leicht</td><td>Briefkasten</td><td>~100</td></tr>
+            <tr><td>LivingPackets</td><td>3,00–10,00 €</td><td>groß (Box)</td><td>Logistiknetz</td><td>~1000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-footnote">Quelle: eigene Marktrecherche, Stand Pitchdeck LOOPAROO GmbH. LOOPAROO überzeugt vor allem durch den niedrigsten Preis pro Nutzung bei einer besonders einfachen Briefkasten-Rückgabe.</p>
+    </div>
+  </section>
+
+  <!-- ============ MARKT & ROADMAP ============ -->
+  <section class="section section--muted" id="markt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Markt &amp; Potenzial</p>
+        <h2 class="section-title">1,55 Billionen € — und wir sind dabei</h2>
+        <p class="section-lede">Versandverpackungen wachsen mit 5,7&nbsp;% CAGR, nachhaltige Verpackungen sogar mit 7,6&nbsp;% pro Jahr.</p>
+      </div>
+
+      <div class="stat-grid reveal">
+        <div class="stat-block"><p class="stat-block__num">120.000</p><p class="stat-block__label">E-Commerce-Unternehmen im DACH-Raum</p></div>
+        <div class="stat-block"><p class="stat-block__num">82 %</p><p class="stat-block__label">davon mit strategischem Nachhaltigkeitsfokus</p></div>
+        <div class="stat-block"><p class="stat-block__num">2030</p><p class="stat-block__label">EU-weite Mehrwegpflicht (PPWR)</p></div>
+        <div class="stat-block"><p class="stat-block__num">526&nbsp;Mrd.&nbsp;€</p><p class="stat-block__label">Markt für nachhaltige Verpackungen bis 2031</p></div>
+      </div>
+
+      <div class="roadmap reveal">
         <div class="roadmap__step">
           <span class="roadmap__phase">Jahr 1–2</span>
           <h3>Testphase</h3>
@@ -328,27 +487,58 @@
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="section section--split" id="team">
+  <!-- ============ TEAM ============ -->
+  <section class="section" id="team">
     <div class="wrap">
-      <p class="eyebrow eyebrow--dark">Fünf Köpfe, eine Idee</p>
-      <h2 class="section-title">Das sind wir</h2>
-      <p class="section-lede">LOOPAROO GmbH · Gründung 2026 · Sitz Deutschland</p>
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Fünf Köpfe, eine Idee</p>
+        <h2 class="section-title">Das Team hinter LOOPAROO</h2>
+        <p class="section-lede">LOOPAROO GmbH · Gründung 2026 · Sitz Deutschland</p>
+      </div>
 
-      <div class="team-grid">
-        <div class="team-card"><span class="team-card__avatar">A</span><h3>Anton</h3><p>CEO</p></div>
-        <div class="team-card"><span class="team-card__avatar">B</span><h3>Ben</h3><p>COO</p></div>
-        <div class="team-card"><span class="team-card__avatar">J</span><h3>Jonathan</h3><p>CFO</p></div>
-        <div class="team-card"><span class="team-card__avatar">M</span><h3>Merit</h3><p>CPO</p></div>
-        <div class="team-card"><span class="team-card__avatar">L</span><h3>Lola</h3><p>CSO</p></div>
+      <div class="team-grid reveal">
+        <div class="team-card"><span class="team-card__avatar" style="--g1:#8FB47B;--g2:#5C8A55">A</span><h3>Anton</h3><p>CEO</p></div>
+        <div class="team-card"><span class="team-card__avatar" style="--g1:#B7C9A8;--g2:#7C9B6C">B</span><h3>Ben</h3><p>COO</p></div>
+        <div class="team-card"><span class="team-card__avatar" style="--g1:#C9A227;--g2:#8F7318">J</span><h3>Jonathan</h3><p>CFO</p></div>
+        <div class="team-card"><span class="team-card__avatar" style="--g1:#7C9B6C;--g2:#3F6B4A">M</span><h3>Merit</h3><p>CPO</p></div>
+        <div class="team-card"><span class="team-card__avatar" style="--g1:#A9C08F;--g2:#5C8A55">L</span><h3>Lola</h3><p>CSO</p></div>
       </div>
     </div>
   </section>
 
-  <!-- CTA / KONTAKT -->
+  <!-- ============ FAQ ============ -->
+  <section class="section section--muted" id="faq">
+    <div class="wrap wrap--narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Häufige Fragen</p>
+        <h2 class="section-title">FAQ</h2>
+      </div>
+
+      <div class="accordion reveal">
+        <details open>
+          <summary>Ab welchem Versandvolumen lohnt sich LOOPAROO für Händler?</summary>
+          <p>Am wirtschaftlichsten ist der Einsatz ab etwa 500 Paketen pro Monat, da sich die Rücklaufquote und damit die Kosten pro Versand mit steigendem Volumen deutlich verbessern.</p>
+        </details>
+        <details>
+          <summary>Was passiert, wenn eine Tasche nicht zurückkommt?</summary>
+          <p>Ein Pfandmodell und Gamification-Anreize (Loop-Punkte, Rabatte bei Partner-Shops) sind Teil unserer Strategie, um die Rücklaufquote auf über 80&nbsp;% zu heben.</p>
+        </details>
+        <details>
+          <summary>Ist LOOPAROO schon PPWR-konform?</summary>
+          <p>Das Produkt ist auf die kommenden Anforderungen ausgelegt: QR-Kennzeichnung, recyceltes Material und die ab 2030 vorgeschriebene Mehrwegquote von 40&nbsp;% für Versandverpackungen.</p>
+        </details>
+        <details>
+          <summary>Wie wird die Tasche gereinigt?</summary>
+          <p>Bei Bedarf über externe Reinigungspartner nach einheitlichem Hygienestandard — mit Dual-Sourcing, damit ein einzelner Ausfall den Kreislauf nicht stoppt.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / KONTAKT ============ -->
   <section class="section section--dark cta-section" id="kontakt-partner">
     <div class="wrap cta-grid">
-      <div class="cta-grid__text">
+      <div class="cta-grid__text reveal">
         <h2 class="section-title">Weniger Müll.<br>Mehr Zukunft.</h2>
         <p class="section-lede">Ob Online-Shop, nachhaltige Marke oder einfach neugierig — wir freuen uns auf das Gespräch.</p>
         <div class="social-links">
@@ -357,7 +547,7 @@
         </div>
       </div>
 
-      <form class="contact-form" id="partnerForm" novalidate>
+      <form class="contact-form reveal" id="partnerForm" novalidate>
         <h3>Partneranfrage stellen</h3>
         <div class="form-row">
           <label for="name">Name</label>
@@ -370,6 +560,15 @@
         <div class="form-row">
           <label for="email">E-Mail</label>
           <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="volume">Pakete pro Monat (ca.)</label>
+          <select id="volume" name="volume">
+            <option value="<500">unter 500</option>
+            <option value="500-2000">500 – 2.000</option>
+            <option value="2000-10000">2.000 – 10.000</option>
+            <option value=">10000">über 10.000</option>
+          </select>
         </div>
         <div class="form-row">
           <label for="message">Nachricht</label>
@@ -390,9 +589,9 @@
       <p>Mehrweg. Nachhaltig. Zukunft.</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
-      <a href="#problem">Problem</a>
       <a href="#produkt">Produkt</a>
       <a href="#partner">Für Unternehmen</a>
+      <a href="#vergleich">Vergleich</a>
       <a href="#team">Team</a>
       <a href="#impressum">Impressum</a>
       <a href="#datenschutz">Datenschutz</a>
